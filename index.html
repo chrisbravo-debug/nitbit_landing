@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Nitbit - Consultora de Desarrollo Móvil y Plataformas Digitales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Nitbit</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CTA flotante -->
+    <a href="#contacto" class="cta-float" role="button" aria-label="Ir a contacto">
+      <i class="fas fa-paper-plane"></i> ¡Hablemos!
+    </a>
+
+    <!-- Parallax en hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-parallax-bg"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title" data-aos="fade-right">
+            Transformamos ideas en 
+            <span class="gradient-text">experiencias digitales</span>
+          </h1>
+          <p class="hero-description" data-aos="fade-right" data-aos-delay="100">
+            Somos una consultora especializada en desarrollo móvil y plataformas digitales. 
+            Creamos soluciones innovadoras que impulsan el crecimiento de tu negocio.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary" role="button">Comenzar Proyecto</a>
+            <a href="#proyectos" class="btn btn-secondary" role="button">Ver Proyectos</a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Tecnología digital" />
+        </div>    
+      </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+        <svg class="section-wave" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#2979FF" fill-opacity="0.7" d="M0,64 C360,120 1080,0 1440,64 L1440,100 L0,100 Z"></path>
+        </svg>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones integrales para tu transformación digital</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Desarrollo Móvil</h3>
+                    <p>Aplicaciones nativas e híbridas para iOS y Android con las últimas tecnologías y mejores prácticas de UX/UI.</p>
+                    <ul class="service-features">
+                        <li class="tech-tooltip">
+                            <span>iOS & Android</span>
+                            <div class="tooltip-content">Sistemas operativos móviles de Apple y Google</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>React Native</span>
+                            <div class="tooltip-content">Framework para crear aplicaciones móviles con JavaScript</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Flutter</span>
+                            <div class="tooltip-content">Framework de Google para desarrollo móvil multiplataforma</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>UX/UI Design</span>
+                            <div class="tooltip-content">Diseño de experiencia de usuario e interfaces</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Plataformas web modernas, responsivas y escalables que ofrecen experiencias excepcionales a tus usuarios.</p>
+                    <ul class="service-features">
+                        <li class="tech-tooltip">
+                            <span>React & Vue.js</span>
+                            <div class="tooltip-content">Bibliotecas para crear interfaces web interactivas</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Node.js & Python</span>
+                            <div class="tooltip-content">Tecnologías para el desarrollo del lado del servidor</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Progressive Web Apps</span>
+                            <div class="tooltip-content">Aplicaciones web que funcionan como apps nativas</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>E-commerce</span>
+                            <div class="tooltip-content">Plataformas de comercio electrónico online</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Separar Cloud & DevOps en dos tarjetas independientes -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud</h3>
+                    <p>Infraestructura en la nube escalable y segura para optimizar el rendimiento y reducir costos operativos.</p>
+                    <ul class="service-features">
+                        <li class="tech-tooltip">
+                            <span>AWS (Amazon Web Services)</span>
+                            <div class="tooltip-content">Servicios en la nube de Amazon para hosting y almacenamiento</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Microsoft Azure</span>
+                            <div class="tooltip-content">Plataforma de computación en la nube de Microsoft</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Google Cloud Platform</span>
+                            <div class="tooltip-content">Servicios de computación en la nube de Google</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Multi-Cloud Solutions</span>
+                            <div class="tooltip-content">Soluciones que combinan múltiples proveedores de nube</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <p>Automatización de procesos de desarrollo, despliegue y monitoreo para entregas continuas y confiables.</p>
+                    <ul class="service-features">
+                        <li class="tech-tooltip">
+                            <span>Docker & Kubernetes</span>
+                            <div class="tooltip-content">Herramientas para empaquetar y gestionar aplicaciones en contenedores</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>CI/CD Pipelines</span>
+                            <div class="tooltip-content">Automatización del proceso de desarrollo y despliegue de software</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Monitoring & Logging</span>
+                            <div class="tooltip-content">Sistemas para supervisar el rendimiento y registrar eventos</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Infrastructure as Code</span>
+                            <div class="tooltip-content">Gestión de infraestructura mediante código en lugar de configuración manual</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consultoría Digital</h3>
+                    <p>Estrategias digitales personalizadas para optimizar procesos, mejorar la eficiencia y aumentar la rentabilidad.</p>
+                    <ul class="service-features">
+                        <li class="tech-tooltip">
+                            <span>Análisis de Negocio</span>
+                            <div class="tooltip-content">Evaluación de procesos y estrategias de negocio</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Transformación Digital</span>
+                            <div class="tooltip-content">Modernización de procesos tradicionales con tecnología digital</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Optimización de Procesos</span>
+                            <div class="tooltip-content">Mejora de eficiencia y productividad en procesos empresariales</div>
+                        </li>
+                        <li class="tech-tooltip">
+                            <span>Roadmap Tecnológico</span>
+                            <div class="tooltip-content">Planificación estratégica de implementación tecnológica</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section con imágenes reales -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proyectos Destacados</h2>
+            </div>
+            <!-- Reducir a 3 proyectos destacados sin repetir tecnologías -->
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Proyecto FinTech Pro" />
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tooltip">
+                                    React Native
+                                    <div class="tooltip-content">Framework para crear aplicaciones móviles con JavaScript</div>
+                                </span>
+                                <span class="tech-tooltip">
+                                    Node.js
+                                    <div class="tooltip-content">Tecnología para el desarrollo del lado del servidor</div>
+                                </span>
+                                <span class="tech-tooltip">
+                                    AWS
+                                    <div class="tooltip-content">Servicios en la nube de Amazon para hosting y almacenamiento</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FinTech Pro</h3>
+                        <p>Aplicación móvil de servicios financieros con más de 50,000 usuarios activos y transacciones seguras en tiempo real.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">47K+</span>
+                                <span class="stat-label">Usuarios</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">99.7%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://demo-fintech.nitbit.mx" target="_blank" class="btn btn-primary">Ver Demo</a>
+                            <a href="https://github.com/nitbit/fintech-demo" target="_blank" class="btn btn-secondary">Código</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80" alt="Proyecto EduTech" />
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tooltip">
+                                    Vue.js
+                                    <div class="tooltip-content">Biblioteca para crear interfaces web interactivas</div>
+                                </span>
+                                <span class="tech-tooltip">
+                                    Python
+                                    <div class="tooltip-content">Lenguaje de programación versátil para desarrollo web y análisis de datos</div>
+                                </span>
+                                <span class="tech-tooltip">
+                                    Docker
+                                    <div class="tooltip-content">Herramienta para empaquetar aplicaciones en contenedores</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EduTech Platform</h3>
+                        <p>Plataforma educativa con más de 200 cursos online, sistema de videoconferencias y análisis de aprendizaje.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">187+</span>
+                                <span class="stat-label">Cursos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">23K+</span>
+                                <span class="stat-label">Estudiantes</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://demo-edutech.nitbit.mx" target="_blank" class="btn btn-primary">Probar Plataforma</a>
+                            <a href="https://github.com/nitbit/edutech-demo" target="_blank" class="btn btn-secondary">Código</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Proyecto HealthTracker" />
+                        <div class="project-overlay">
+                            <div class="project-tech">
+                                <span class="tech-tooltip">
+                                    Flutter
+                                    <div class="tooltip-content">Framework de Google para desarrollo móvil multiplataforma</div>
+                                </span>
+                                <span class="tech-tooltip">
+                                    Firebase
+                                    <div class="tooltip-content">Plataforma de Google para desarrollo de aplicaciones y servicios en la nube</div>
+                                </span>
+                                <span class="tech-tooltip">
+                                    ML
+                                    <div class="tooltip-content">Tecnología de inteligencia artificial para análisis predictivo</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HealthTracker</h3>
+                        <p>Aplicación de salud y bienestar con seguimiento de actividad física, nutrición y análisis predictivo de salud.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">97K+</span>
+                                <span class="stat-label">Descargas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4.7★</span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://demo-healthtracker.nitbit.mx" target="_blank" class="btn btn-primary">Probar App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.nitbit.healthtracker" target="_blank" class="btn btn-secondary">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider SVG Onda suave -->
+    <svg class="section-wave" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#2979FF" fill-opacity="0.7" d="M0,64 C360,120 1080,0 1440,64 L1440,100 L0,100 Z"></path>
+    </svg>
+
+    <!-- Después de proyectos -->
+    <section class="clients">
+      <div class="container">
+        <div class="clients-logos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" />
+         </div>
+      </div>
+    </section>
+    <!-- Divider después de clientes -->
+    <section class="section-divider"></section>
+
+    <!-- Equipo Section con los nuevos miembros -->
+    <section id="equipo" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Equipo</h2>
+                <p>Expertos apasionados por la tecnología y la innovación</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up">
+                    <div class="member-avatar">
+                        <img src="assets/erick_profile.jpg" alt="Erick Alfonso Hernández" class="avatar-img" />
+                    </div>
+                    <h3>Erick Alfonso Hernández</h3>
+                    <p class="member-role">Full Stack Developer</p>
+                    <p class="member-bio">Con 8 años de experiencia como desarrollador Full Stack, Erick es especialista en la creación de flujos de trabajo end-to-end y arquitecturas de software basadas en tecnologías de la nube, garantizando soluciones robustas y escalables.</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-avatar">
+                        <img src="assets/victor_profile.jpg" alt="Victor Manuel Contreras" class="avatar-img" />
+                    </div>
+                    <h3>Victor Manuel Contreras</h3>
+                    <p class="member-role">Data Science & Automation Lead</p>
+                    <p class="member-bio">Doctor en Ciencias Administrativas de la Tecnología, con 5 años de experiencia aplicando herramientas no-code para el minado y análisis de datos. Victor transforma la información compleja en decisiones estratégicas para el negocio.</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-avatar">
+                        <img src="assets/ricardo_profile.jpg" alt="Ricardo Mendoza" class="avatar-img" />
+                    </div>
+                    <h3>Ricardo Mendoza</h3>
+                    <p class="member-role">UX/UI Designer</p>
+                    <p class="member-bio">Con 2 años de experiencia, Ricardo se especializa en el diseño de experiencias de usuario (UX) e interfaces (UI). Domina herramientas como Figma para crear flujos de navegación intuitivos y diseños atractivos que conectan con el usuario final.</p>
+                </div>
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-avatar">
+                        <img src="assets/julio_profile.jpg" alt="Julio Pérez" class="avatar-img" />
+                    </div>
+                    <h3>Julio Pérez</h3>
+                    <p class="member-role">Senior Software Engineer</p>
+                    <p class="member-bio">Aportando ocho años de trayectoria en el desarrollo de software, Julio domina el ciclo de vida completo de las aplicaciones. Es experto en la construcción de sistemas resilientes y de alta disponibilidad, implementando arquitecturas integrales sobre plataformas en la nube.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Listo para comenzar tu proyecto?</h2>
+                    <p>Conversemos sobre cómo podemos ayudarte a alcanzar tus objetivos digitales.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>miguel@nitbit.mx</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Orizaba_Veracruz, México</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="enviar.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="mensaje" placeholder="Cuéntanos sobre tu proyecto" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider antes del footer -->
+    <section class="section-divider"></section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nitbit</h3>
+                    <p>Transformando ideas en experiencias digitales excepcionales.</p>
+                    <!-- Actualizar enlaces de redes sociales de Nitbit -->
+                    <div class="social-links">
+                        <a href="https://x.com/nitbit_mx?s=21" target="_blank" aria-label="Síguenos en X"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nitbit.mx?igsh=MWdhcHhqeW5jcHNpMg%3D%3D&utm_source=qr" target="_blank" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Desarrollo Móvil</a></li>
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#servicios">Cloud & DevOps</a></li>
+                        <li><a href="#servicios">Consultoría Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#equipo">Nuestro Equipo</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>migue@nitbit.mx</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>Orizaba-Veracruz, México</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nitbit. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Incluir AOS para animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Scripts para animación de números y parallax -->
+    <script>
+    // Animación de números
+    function animateCount(el) {
+      const target = +el.getAttribute('data-count');
+      let count = 0;
+      const step = Math.ceil(target / 60);
+      function update() {
+        count += step;
+        if (count > target) count = target;
+        el.textContent = count;
+        if (count < target) requestAnimationFrame(update);
+      }
+      update();
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.kpi-number').forEach(el => animateCount(el));
+    });
+    // Parallax en hero
+    window.addEventListener('scroll', function() {
+      const bg = document.querySelector('.hero-parallax-bg');
+      if(bg) {
+        bg.style.transform = 'translateY(' + window.scrollY * 0.3 + 'px)';
+      }
+    });
+    
+    // Tooltips personalizados
+    document.addEventListener('DOMContentLoaded', function() {
+        const tooltips = document.querySelectorAll('.tech-tooltip');
+        
+        tooltips.forEach(tooltip => {
+            tooltip.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Cerrar todos los tooltips abiertos
+                tooltips.forEach(t => t.classList.remove('active'));
+                
+                // Abrir el tooltip clickeado
+                this.classList.add('active');
+            });
+        });
+        
+        // Cerrar tooltips al hacer clic fuera
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.tech-tooltip')) {
+                tooltips.forEach(t => t.classList.remove('active'));
+            }
+        });
+        
+        // Cerrar tooltips con ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                tooltips.forEach(t => t.classList.remove('active'));
+            }
+        });
+    });
+    </script>
+</body>
+</html> 
