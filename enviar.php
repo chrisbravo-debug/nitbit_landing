@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = strip_tags(trim($_POST["mensaje"]));
 
     // **MODIFICA ESTAS LÍNEAS**
-    $destinatario = "miguel@nitbit.mx"; // El email donde quieres recibir los mensajes
+    $destinatario = "demian.perez@nitbit.mx"; // El email donde quieres recibir los mensajes
     $asunto = "Nuevo mensaje de contacto de $nombre";
 
     // Validar que los campos no estén vacíos

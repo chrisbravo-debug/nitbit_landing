@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura - Conecta en el Mundo Real</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+        }
+        .bg-primary { background-color: #8F33FF; }
+        .text-primary { color: #8F33FF; }
+        .bg-secondary { background-color: #9A7BDD; }
+        .text-secondary { color: #9A7BDD; }
+        .bg-gradient-aura {
+            background: linear-gradient(90deg, #9A7BDD 0%, #8F33FF 100%);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Placeholder -->
+            <a href="#" class="flex items-center space-x-2">
+                <svg class="h-8 w-8 text-primary" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                <span class="text-2xl font-bold text-gray-800">Aura</span>
+            </a>
+            <!-- Download Buttons -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-900 transition-colors">Descargar para iOS</a>
+                <a href="#" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-opacity-90 transition-colors">Descargar para Android</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                    Deja el scroll. <br class="hidden md:block"> Empieza a <span class="text-primary">conectar</span>.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Aura es la app que te saca al mundo real. Entra en espacios físicos, conoce gente con tus mismas intenciones y crea conexiones auténticas.
+                </p>
+                <div class="flex justify-center space-x-4 mb-12">
+                     <a href="#" class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-colors shadow-lg">Únete a la comunidad</a>
+                     <a href="#features" class="bg-gray-200 text-gray-800 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-300 transition-colors">Descubre cómo funciona</a>
+                </div>
+                <!-- App Screenshot Placeholder -->
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/350x700/2d3748/ffffff?text=Pantalla+Principal+de+Aura" alt="[Imagen de la pantalla principal de la app Aura]" class="rounded-3xl shadow-2xl hover-lift">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-2">Tu energía tiene un lugar</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Estas son las herramientas que te damos para que tu energía brille.</p>
+                </div>
+
+                <!-- Feature 1: Geocercas -->
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-4 text-primary">Geocercas: Conexiones reales, en lugares reales.</h3>
+                        <p class="text-gray-600 mb-4 text-lg">
+                            Entra en espacios físicos como cafés, parques o eventos. Nuestra tecnología de geocercas te permite ver quién más está ahí y dispuesto a conectar. Tu próxima gran conversación está a unos metros de ti.
+                        </p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Prueba de vida con selfie para garantizar perfiles reales.</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Declara tu "intención" para romper el hielo.</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Chats temporales que fomentan la interacción inmediata.</li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2 flex justify-center">
+                        <img src="https://placehold.co/350x700/2d3748/ffffff?text=Captura+de+Geocercas" alt="[Imagen de la funcionalidad de Geocercas en Aura]" class="rounded-3xl shadow-2xl hover-lift">
+                    </div>
+                </div>
+
+                <!-- Feature 2: Aura & Shines -->
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                    <div class="flex justify-center">
+                         <img src="https://placehold.co/350x700/2d3748/ffffff?text=Captura+del+Perfil+con+Aura" alt="[Imagen del perfil de usuario mostrando su Aura]" class="rounded-3xl shadow-2xl hover-lift">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4 text-secondary">Tu Aura: Más que un perfil, es tu energía.</h3>
+                        <p class="text-gray-600 mb-4 text-lg">
+                            El Aura es tu reputación y nivel de confianza en la comunidad. Gana Aura interactuando positivamente y úsala para destacar. Los "Shines" son la forma de reconocer la buena energía de los demás.
+                        </p>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Gana Aura por cada 5 Shines que recibes.</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Un Aura alta te da más visibilidad y credibilidad.</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Regala Aura para mostrar un aprecio especial.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                 <!-- Feature 3: Conexiones -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-3xl font-bold mb-4 text-primary">Conexiones: Expresa tu mundo.</h3>
+                        <p class="text-gray-600 mb-4 text-lg">
+                           Crea publicaciones y contenido para expresarte. Tú decides el alcance: desde un círculo íntimo de amigos hasta una audiencia internacional. Tu contenido, tus reglas.
+                        </p>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Publicaciones que viven 30 días para mantener el contenido fresco.</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Control total sobre quién ve tus publicaciones y quién puede comentar.</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Amplifica contenido que te inspire para compartirlo con tu red.</li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2 flex justify-center">
+                        <img src="https://placehold.co/350x700/2d3748/ffffff?text=Captura+de+Conexiones" alt="[Imagen de la pantalla de Conexiones en Aura]" class="rounded-3xl shadow-2xl hover-lift">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Premium Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                 <div class="max-w-3xl mx-auto">
+                    <span class="text-sm font-bold uppercase text-primary tracking-widest">Aura Premium</span>
+                    <h2 class="text-4xl font-bold my-4">Potencia tu energía al máximo.</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Para aquellos que quieren llevar sus conexiones al siguiente nivel, Aura Premium ofrece beneficios exclusivos para que destaques aún más.
+                    </p>
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 text-left grid sm:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <span class="bg-primary text-white rounded-full p-1.5">&#10003;</span>
+                            <p><strong>Doble de Aura:</strong> Gana el doble de Aura en todas tus interacciones.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="bg-primary text-white rounded-full p-1.5">&#10003;</span>
+                            <p><strong>Boost Semanal:</strong> Aparece en el top de una geocerca por 30 min.</p>
+                        </div>
+                         <div class="flex items-start space-x-3">
+                            <span class="bg-primary text-white rounded-full p-1.5">&#10003;</span>
+                            <p><strong>Geocercas Premium:</strong> Acceso a eventos y lugares exclusivos.</p>
+                        </div>
+                         <div class="flex items-start space-x-3">
+                            <span class="bg-primary text-white rounded-full p-1.5">&#10003;</span>
+                            <p><strong>Perfiles Personalizados:</strong> Desbloquea colores y diseños únicos.</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="bg-gradient-aura text-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-4xl font-bold mb-4">¿Listo para conectar de verdad?</h2>
+                <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-8">
+                    Descarga Aura hoy mismo y empieza a descubrir a las personas increíbles que están a tu alrededor.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="bg-white text-primary font-bold py-3 px-6 rounded-lg flex items-center space-x-2 w-full sm:w-auto justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1724px-Apple_logo_white.svg.png" alt="[Logo de Apple]" class="h-6 w-auto filter invert">
+                        <span>Descargar para iOS</span>
+                    </a>
+                    <a href="#" class="bg-white text-primary font-bold py-3 px-6 rounded-lg flex items-center space-x-2 w-full sm:w-auto justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1047px-Android_robot.svg.png" alt="[Logo de Android]" class="h-6 w-auto">
+                        <span>Descargar para Android</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm">&copy; 2025 Aura. Todos los derechos reservados.</p>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Términos</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Contacto</a>
+                    <!-- Social Media Icons -->
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.28C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.86,14.5 12,14.5C10.14,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6Z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

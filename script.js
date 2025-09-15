@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            header.style.background = 'rgba(0, 0, 0, 0.98)';
+            header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
         } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            header.style.background = 'rgba(0, 0, 0, 0.95)';
             header.style.boxShadow = 'none';
         }
         
@@ -364,10 +364,24 @@ const additionalStyles = `
         top: 100%;
         left: 0;
         right: 0;
-        background: white;
+        background: rgba(0, 0, 0, 0.98);
+        backdrop-filter: blur(10px);
         padding: 1rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        border-top: 1px solid var(--border-color);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        gap: 1rem;
+    }
+    
+    .nav-menu.active a {
+        color: #fff !important;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    
+    .nav-menu.active .nav-cta {
+        background: #f5f5f5;
+        color: #000 !important;
+        margin-top: 0.5rem;
     }
     
     .nav-toggle.active span:nth-child(1) {
@@ -390,6 +404,10 @@ const additionalStyles = `
         .nav-menu.active {
             display: flex;
         }
+        
+        .nav-toggle {
+            display: flex;
+        }
     }
     
     /* Mejoras para móvil */
@@ -404,6 +422,36 @@ const additionalStyles = `
         
         .feature-item {
             margin: 0 0.5rem;
+        }
+        
+        .nav-menu.active {
+            padding: 1.5rem 1rem;
+        }
+        
+        .nav-menu.active a {
+            font-size: 1.1rem;
+            padding: 0.75rem 0;
+        }
+        
+        .nav-toggle {
+            display: flex;
+        }
+        
+        .nav-container {
+            padding: 0 1rem;
+        }
+        
+        .hero-title {
+            font-size: 2rem;
+        }
+        
+        .hero-description {
+            font-size: 1rem;
+        }
+        
+        .btn {
+            padding: 0.875rem 1.5rem;
+            font-size: 0.875rem;
         }
     }
 `;
