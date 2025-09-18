@@ -793,13 +793,17 @@ body::before {
 
 .team-member {
     background: #fff;
-    padding: 2rem 1.5rem;
+    padding: 3rem 2.5rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    text-align: left;
+    text-align: center;
     position: relative;
     border: 1px solid #f0f0f0;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .team-member:hover {
@@ -808,12 +812,15 @@ body::before {
 }
 
 .member-avatar {
-    width: 110px;
-    height: 110px;
-    margin-bottom: 1.25rem;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .member-avatar img {
@@ -839,12 +846,16 @@ body::before {
 
 .member-contact {
     margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    justify-content: center;
     font-size: 0.85rem;
 }
 
@@ -861,9 +872,9 @@ body::before {
 }
 
 .linkedin-icon {
-    position: absolute;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
 }
 
 .linkedin-icon a {
@@ -1613,12 +1624,14 @@ body::before {
     }
     
     .team-member {
-        padding: 1.5rem 1rem;
+        padding: 2.5rem 2rem;
+        min-height: 400px;
     }
     
     .member-avatar {
-        width: 95px;
-        height: 95px;
+        width: 105px;
+        height: 105px;
+        margin: 0 auto 1.25rem;
     }
     
     .hero-buttons {
@@ -1744,20 +1757,21 @@ body::before {
     }
     
     .team-member {
-        padding: 1.5rem;
+        padding: 2.5rem 2rem;
         text-align: center;
+        min-height: 380px;
     }
     
     .member-avatar {
-        width: 85px;
-        height: 85px;
-        margin: 0 auto 1rem;
+        width: 95px;
+        height: 95px;
+        margin: 0 auto 1.25rem;
     }
     
     .linkedin-icon {
-        position: static;
+        display: flex;
+        justify-content: center;
         margin-top: 1rem;
-        text-align: center;
     }
     
     .contact-form-title h2,
